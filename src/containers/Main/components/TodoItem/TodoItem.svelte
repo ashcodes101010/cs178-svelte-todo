@@ -5,16 +5,16 @@
   const dispatch = createEventDispatcher();
   
   function remove() {
-  	dispatch('remove', { id });
-	}
+    dispatch('remove', { id });
+  }
 
-	function toggleStatus() {
-		let newStatus = !complete;
-		dispatch('toggle', {
-			id,
-			newStatus
-		});
-	}
+  function toggleStatus() {
+    let newStatus = !complete;
+    dispatch('toggle', {
+      id,
+      newStatus
+    });
+  }
     
   // #Reactive
   export let id; // document ID
